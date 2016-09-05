@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  	<head>
+    <title>XSS protection</title>
+    <link rel="stylesheet" type="text/css" href="sidestyle.css" media="screen" />
+    <script src="jquery.js"></script> 
+    <script src="popup.js"></script>
+  	</head>
+  	
+  	<body>
+    <div id="main">
+        <div id="menu1">
+      	    <img id="shield" src="shieldsafe.jpg"></img>
+            <div id="settingsop"><img src="settingscog.png"/>Settings</div>
+        </div>
+
+        <div id="menu2">
+            <form>
+                URL scan:
+                <input type="checkbox" class="ads_Checkbox" name="urlscan" value="0">
+                <br>
+                Personal database:
+                <input type="checkbox" class="ads_Checkbox" name="personal" value="1">
+                <br>
+                <span class="tooltip">Remote analysis:
+				<span class="tooltiptext">This section is currently under development</span>     
+                <input type="checkbox" class="ads_Checkbox" name="online" value="2">
+				</span>
+                <br>
+                Local analysis:
+                <input type="checkbox" class="ads_Checkbox" name="pagescan" value="3">
+                <br>
+                Help us improve:
+                <input type="checkbox" class="ads_Checkbox" name="help" value="4">
+                <br>
+            </form>
+            <br/>
+            <form action="" id="info" >
+                <div class="box"><input type="radio" name="strength" value="-1"><br/>off</div>
+                <div class="box"><input type="radio" name="strength" value="70"><br/>low</div>
+                <div class="box"><input type="radio" name="strength" value="40"><br/>mid</div>
+                <div class="box"><input type="radio" name="strength" value="10"><br/>high</div>
+            </form>
+
+            <div id="settingscl"><img src="backbutton.png"/>save</div>
+        </div>
+
+    </div>
+    </body>
+</html>
+

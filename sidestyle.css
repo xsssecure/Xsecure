@@ -1,0 +1,103 @@
+body {
+    max-width: 130px;
+}
+
+#main{
+	height: 206px;
+    overflow: hidden;
+}
+
+#shield{
+	margin: 5px;
+	vertical-align: middle;
+	width: 120px;
+	height: 176px;
+}
+
+
+#menu2{
+	margin-top: 20px;
+	height: 206px;
+	width:  130px;
+}
+
+form {
+    text-align: right;
+}
+
+#settingsop img {
+	height: 15px;
+	width: 15px;
+	vertical-align: middle;
+}
+#settingsop{
+	cursor: pointer;
+	font-size: 13px;
+	position: absolute; 
+	bottom: 5px;
+}
+
+
+#settingscl img {
+	height: 15px;
+	width: 15px;
+	vertical-align: middle;
+}
+#settingscl{
+	cursor: pointer;
+	font-size: 13px;
+	position: absolute; 
+	bottom: 5px;
+}
+
+.box{
+	float: left;
+	text-align: center;
+	margin: 4px;
+	padding: 1px;
+	font-size: 10px;
+
+}
+
+
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
